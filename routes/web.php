@@ -20,3 +20,8 @@ Route::post('/logout', 'LoginController@logout');
 
 Route::get('/register', 'RegisterController@register');
 Route::post('/register', 'RegisterController@postRegister');
+
+Route::get('/dashboard', 'DashboardController@home');
+Route::get('/all-post', 'PostController@allPost');
+Route::get('/new-cover', 'PostController@addNewPost');
+Route::post('/new-cover', 'PostController@savePost');

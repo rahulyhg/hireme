@@ -42,7 +42,7 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						@if(Sentinel::check())
-						<li><a href="#">{{ Sentinel::getUser()->first_name }}</a></li>
+						<li><a href="/dashboard">{{ Sentinel::getUser()->first_name }}</a></li>
 						<li><form action="/logout" method="post" id="logout-form">
 							{{ csrf_field() }}
 							<a href="#" onclick="document.getElementById('logout-form').submit()">Logout</a>
