@@ -28,7 +28,7 @@ class PostController extends Controller
     		'post_type'=>1,
     		'post_user'=>Sentinel::getUser()->id,
     		//'image'=>$request->input('image'),
-    		'tag'=>$request->input('tag')
+    		//'tag'=>$request->input('tag')
     	];
 
     	$post = DB::table('posts')->insert($data);
